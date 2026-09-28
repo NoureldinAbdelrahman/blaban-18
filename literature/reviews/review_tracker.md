@@ -33,7 +33,7 @@ Track progress reviewing the curated corpus. `Status` ∈ {unread, reading, revi
 > and download links: [`shortlist_2026.md`](shortlist_2026.md).
 
 - [ ] 1. Yuan et al. 2025 — Energy learning hyper-heuristic for heterogeneous UAVs ([note](../notes/energy-learning-hyper-heuristic-heterogeneous-uav.md))
-- [ ] 2. Meng et al. 2026 — Adaptive memetic algorithm for multi-UAV task assignment ([note](../notes/adaptive-memetic-multi-uav-task-assignment.md))
-- [ ] 3. Xiao et al. 2024 — ALNS with reinforcement search for UAV task assignment ([note](../notes/alns-reinforcement-uav-task-assignment.md))
+- [ ] 2. Cheng et al. 2024 — Adaptive memetic algorithm with dual-level local search, multi-robot surveillance ([note](../notes/adaptive-memetic-multi-robot-surveillance.md))
+- [ ] 3. Qin et al. 2025 — DRL-driven seagull optimization for multi-UAV task allocation ([note](../notes/drl-seagull-multi-uav-task-allocation.md))
 - [ ] 4. Nait Chabane & Guenounou 2025 — Enhanced GA for heterogeneous multi-robot systems ([note](../notes/enhanced-ga-heterogeneous-multi-robot.md))
-- [ ] 5. Yu et al. 2025 — DRL-assisted multimodal multiobjective MRTA ([note](../notes/drl-multimodal-multiobjective-mrta.md))
+- [ ] 5. Chen et al. 2025 — Bi-subpopulation coevolutionary immune algorithm for multi-UAV task allocation ([note](../notes/coevolutionary-immune-multi-uav-task-allocation.md))
