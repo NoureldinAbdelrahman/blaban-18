@@ -3,6 +3,7 @@
 The five articles to review for Milestone 1/2, with download links and rationale.
 **All five are open access** — no paywall, no library login. Notes are in
 `literature/notes/`; BibTeX is in `literature/bibliography/shortlist.bib`.
+A side-by-side comparison is in [`comparative_summary.md`](comparative_summary.md).
 
 ## Selection criteria
 
