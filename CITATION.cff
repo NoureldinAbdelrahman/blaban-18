@@ -16,8 +16,9 @@ keywords:
   - genetic algorithm
   - particle swarm optimization
 abstract: >-
-  BLABAN is a metaheuristic optimization toolkit for multi-agent cooperative
-  systems, developed for the MCTR 1021 course project at the German University
-  in Cairo. It implements Simulated Annealing, Genetic Algorithm, a swarm-based
-  optimizer and a novel population-based metaheuristic on a shared problem
-  formulation, with reproducible experiments and benchmarking.
+  BLABAN is the working repository for the MCTR 1021 course project at the German
+  University in Cairo, on metaheuristic optimization for multi-agent cooperative
+  systems. At this stage it contains a curated literature corpus and a Python
+  package skeleton; Simulated Annealing, a Genetic Algorithm, a swarm-based
+  optimizer and a novel population-based metaheuristic are to be implemented
+  across the course milestones.

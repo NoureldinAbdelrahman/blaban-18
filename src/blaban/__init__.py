@@ -1,7 +1,8 @@
 """BLABAN - Bio-inspired Learning Algorithms for Benchmarking Agent Navigation.
 
-A metaheuristic optimization toolkit for multi-agent cooperative systems,
-built for the GUC MCTR 1021 course project (Winter 2026, Team 18).
+Project scaffold for the GUC MCTR 1021 course project (Winter 2026, Team 18).
+Algorithms and problem formulations are added across the course milestones; the
+subpackages below are placeholders until then.
 
 Package layout:
     problems        problem formulations (decision variables, objectives, constraints)
