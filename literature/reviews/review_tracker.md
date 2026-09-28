@@ -29,11 +29,11 @@ Track progress reviewing the curated corpus. `Status` ∈ {unread, reading, revi
 
 ## Shortlist for the 5 required review papers
 
-> The course requires reviewing **5 recent articles (2019–2026)**. Mark the five
-> chosen papers and cite them in `proposals/proposal.md`.
+> The course requires reviewing **5 recent articles (2019–2026)**. Full rationale
+> and download links: [`shortlist_2026.md`](shortlist_2026.md).
 
-- [ ] 1.
-- [ ] 2.
-- [ ] 3.
-- [ ] 4.
-- [ ] 5.
+- [ ] 1. Yuan et al. 2025 — Energy learning hyper-heuristic for heterogeneous UAVs ([note](../notes/energy-learning-hyper-heuristic-heterogeneous-uav.md))
+- [ ] 2. Meng et al. 2026 — Adaptive memetic algorithm for multi-UAV task assignment ([note](../notes/adaptive-memetic-multi-uav-task-assignment.md))
+- [ ] 3. Xiao et al. 2024 — ALNS with reinforcement search for UAV task assignment ([note](../notes/alns-reinforcement-uav-task-assignment.md))
+- [ ] 4. Nait Chabane & Guenounou 2025 — Enhanced GA for heterogeneous multi-robot systems ([note](../notes/enhanced-ga-heterogeneous-multi-robot.md))
+- [ ] 5. Yu et al. 2025 — DRL-assisted multimodal multiobjective MRTA ([note](../notes/drl-multimodal-multiobjective-mrta.md))
