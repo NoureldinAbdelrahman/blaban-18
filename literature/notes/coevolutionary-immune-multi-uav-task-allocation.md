@@ -6,7 +6,7 @@ year: 2025
 venue: "Complex & Intelligent Systems"
 doi: "10.1007/s40747-024-01720-9"
 url: "https://doi.org/10.1007/s40747-024-01720-9"
-pdf: null
+pdf: literature/papers/coevolutionary-immune-multi-uav-task-allocation.pdf
 tags: ["coevolution", "immune-algorithm", "multi-objective", "multi-uav", "task-allocation", "review-2026"]
 status: unread
 relevance: 0
@@ -18,7 +18,7 @@ reviewed_date: ""
 
 > [!info] Citation
 > X. Chen, Y. Wan, J. Qi, Z. Zhao, Y. Ruan, and J. Tang, "A bi-subpopulation coevolutionary immune algorithm for multi-objective combinatorial optimization in multi-UAV task allocation," *Complex & Intelligent Systems*, vol. 11, no. 2, art. 149, 2025.
-> **Access:** Open access (Springer, CC BY-NC-ND 4.0). Download at the DOI link.
+> **Access:** Open access (Springer, CC BY-NC-ND 4.0). [Local PDF](../papers/coevolutionary-immune-multi-uav-task-allocation.pdf) · [DOI](https://doi.org/10.1007/s40747-024-01720-9)
 
 ## Why this paper (pre-selected)
 

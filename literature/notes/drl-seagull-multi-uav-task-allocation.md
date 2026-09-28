@@ -6,7 +6,7 @@ year: 2025
 venue: "Drones"
 doi: "10.3390/drones9060436"
 url: "https://doi.org/10.3390/drones9060436"
-pdf: null
+pdf: literature/papers/drl-seagull-multi-uav-task-allocation.pdf
 tags: ["reinforcement-learning", "swarm-intelligence", "multi-uav", "task-allocation", "adaptive-strategy", "review-2026"]
 status: unread
 relevance: 0
@@ -18,7 +18,7 @@ reviewed_date: ""
 
 > [!info] Citation
 > L. Qin, Z. Zhou, H. Liu, Z. Yan, and Y. Dai, "A deep reinforcement learning-driven seagull optimization algorithm for solving multi-UAV task allocation problem in plateau ecological restoration," *Drones*, vol. 9, no. 6, art. 436, 2025.
-> **Access:** Open access (MDPI, CC BY 4.0). Download at the DOI link.
+> **Access:** Open access (MDPI, CC BY 4.0). [Local PDF](../papers/drl-seagull-multi-uav-task-allocation.pdf) · [DOI](https://doi.org/10.3390/drones9060436)
 
 ## Why this paper (pre-selected)
 

@@ -6,7 +6,7 @@ year: 2025
 venue: "Complex & Intelligent Systems"
 doi: "10.1007/s40747-025-02062-w"
 url: "https://doi.org/10.1007/s40747-025-02062-w"
-pdf: null
+pdf: literature/papers/enhanced-ga-heterogeneous-multi-robot.pdf
 tags: ["genetic-algorithm", "heterogeneous-fleet", "task-allocation", "path-planning", "benchmark", "review-2026"]
 status: unread
 relevance: 0
@@ -18,7 +18,7 @@ reviewed_date: ""
 
 > [!info] Citation
 > A. Nait Chabane and O. Guenounou, "An enhanced genetic algorithm for optimized task allocation and planning in heterogeneous multi-robot systems," *Complex & Intelligent Systems*, vol. 11, art. 435, 2025.
-> **Access:** Open access (Springer). Download directly from the DOI link.
+> **Access:** Open access (Springer). [Local PDF](../papers/enhanced-ga-heterogeneous-multi-robot.pdf) · [DOI](https://doi.org/10.1007/s40747-025-02062-w)
 
 ## Why this paper (pre-selected)
 

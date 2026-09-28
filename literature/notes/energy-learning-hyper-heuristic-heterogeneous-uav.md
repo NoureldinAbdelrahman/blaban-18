@@ -6,7 +6,7 @@ year: 2025
 venue: "Defence Technology"
 doi: "10.1016/j.dt.2025.06.006"
 url: "https://doi.org/10.1016/j.dt.2025.06.006"
-pdf: null
+pdf: literature/papers/energy-learning-hyper-heuristic-heterogeneous-uav.pdf
 tags: ["hyper-heuristic", "uav", "task-assignment", "energy", "operator-selection", "review-2026"]
 status: unread
 relevance: 0
@@ -18,7 +18,7 @@ reviewed_date: ""
 
 > [!info] Citation
 > M. Yuan, M. Chen, T. Zhou, and Z. Han, "Energy learning hyper-heuristic algorithm for cooperative task assignment of heterogeneous UAVs under complex constraints," *Defence Technology*, vol. 54, pp. 1–14, 2025.
-> **Access:** Open access (Elsevier / KeAi). Download from the DOI link.
+> **Access:** Open access (Elsevier / KeAi). [Local PDF](../papers/energy-learning-hyper-heuristic-heterogeneous-uav.pdf) · [DOI](https://doi.org/10.1016/j.dt.2025.06.006)
 
 ## Why this paper (pre-selected)
 
