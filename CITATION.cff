@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: "BLABAN: Bio-inspired Learning Algorithms for Benchmarking Agent Navigation"
+message: "If you use this code or the accompanying report, please cite it as below."
+type: software
+authors:
+  - family-names: Abdelrahman
+    given-names: Noureldin
+repository-code: "https://github.com/NoureldinAbdelrahman/blaban-18"
+license: MIT
+keywords:
+  - metaheuristics
+  - multi-agent systems
+  - cooperative robotics
+  - optimization
+  - simulated annealing
+  - genetic algorithm
+  - particle swarm optimization
+abstract: >-
+  BLABAN is a metaheuristic optimization toolkit for multi-agent cooperative
+  systems, developed for the MCTR 1021 course project at the German University
+  in Cairo. It implements Simulated Annealing, Genetic Algorithm, a swarm-based
+  optimizer and a novel population-based metaheuristic on a shared problem
+  formulation, with reproducible experiments and benchmarking.

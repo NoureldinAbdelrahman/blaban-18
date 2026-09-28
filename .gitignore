@@ -1,0 +1,55 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ---- MATLAB ----
+*.asv
+*.autosave
+*.m~
+slprj/
+codegen/
+
+# ---- Data & experiment outputs (large / regenerable) ----
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+results/logs/*
+!results/logs/.gitkeep
+
+# ---- LaTeX ----
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.out
+*.toc
+
+# ---- OS / editors ----
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# ---- Archives (papers are tracked uncompressed) ----
+*.zip
+
+# ---- Generated literature intermediates ----
+literature/bibliography/catalog.raw.json

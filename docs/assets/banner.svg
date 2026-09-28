@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="BLABAN banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1026"/>
+      <stop offset="55%" stop-color="#151a3a"/>
+      <stop offset="100%" stop-color="#241b4d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5eead4"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.72" cy="0.35" r="0.55">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="320" rx="24" fill="url(#bg)"/>
+  <rect width="1280" height="320" rx="24" fill="url(#glow)"/>
+
+  <g stroke="#818cf8" stroke-opacity="0.45" stroke-width="1.5">
+    <line x1="900" y1="70" x2="1010" y2="120"/>
+    <line x1="1010" y1="120" x2="1160" y2="90"/>
+    <line x1="1010" y1="120" x2="1090" y2="215"/>
+    <line x1="1090" y1="215" x2="960" y2="255"/>
+    <line x1="900" y1="70" x2="840" y2="180"/>
+    <line x1="840" y1="180" x2="960" y2="255"/>
+    <line x1="840" y1="180" x2="1010" y2="120"/>
+    <line x1="1160" y1="90" x2="1180" y2="200"/>
+    <line x1="1180" y1="200" x2="1090" y2="215"/>
+  </g>
+  <g fill="#a5b4fc">
+    <circle cx="900" cy="70" r="7"/>
+    <circle cx="1010" cy="120" r="9"/>
+    <circle cx="1160" cy="90" r="6"/>
+    <circle cx="1090" cy="215" r="8"/>
+    <circle cx="960" cy="255" r="5"/>
+    <circle cx="840" cy="180" r="7"/>
+    <circle cx="1180" cy="200" r="5"/>
+  </g>
+  <g fill="#5eead4">
+    <circle cx="1010" cy="120" r="3.5"/>
+    <circle cx="840" cy="180" r="3"/>
+  </g>
+
+  <text x="80" y="150" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="104" font-weight="800" letter-spacing="6" fill="url(#accent)">BLABAN</text>
+  <text x="82" y="196" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="500" fill="#e2e8f0">Bio-inspired Learning Algorithms for Benchmarking Agent Navigation</text>
+  <text x="82" y="242" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="400" fill="#94a3b8">MCTR 1021 · Optimization Techniques for Multi-Cooperative Systems · GUC · Winter 2026</text>
+</svg>
