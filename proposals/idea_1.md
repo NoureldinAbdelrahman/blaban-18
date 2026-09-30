@@ -1,105 +1,54 @@
 # Project Idea #1 (Priority)
 
-**Working title:** A Learning-Assisted Energy-Aware Hyper-Heuristic for Cooperative
-Heterogeneous Inspection of a Renewable-Energy Site
+**Title:** Learning-Assisted Swarm Optimization for Cooperative Agricultural Ground Robots
 
-## Domain / Application
+## Setting
 
-- **Theme:** multi-agent cooperative systems in robotics / autonomous systems.
-- **Setting:** preventive inspection of a solar (or wind) farm by a mixed fleet of
-  ground robots and aerial drones. See `proposals/use_case.md`.
+A ground-robot fleet monitors a field: soil sampling, weed mapping, pest scouting.
+See Use Case A in `proposals/use_case.md`.
 
-## Problem Statement
+## Problem
 
-Assign a set of inspection tasks, each requiring a specific sensing capability, to a
-heterogeneous fleet and plan each robot's route at the same time, so that fleet
-energy consumption and mission makespan are minimized and workload is balanced,
-without violating capability, battery, time-window, precedence and obstacle
-constraints.
+Assign sensing tasks and plan routes jointly to cut energy and mission time under
+sensor-match, battery, row, time-window, and precedence constraints.
 
-## Research Question
+## Research question
 
-Can a hyper-heuristic whose operator-selection probabilities are updated from
-performance feedback outperform fixed-schedule hyper-heuristics and classical
-single-operator metaheuristics on an energy-aware, capability-constrained
-inspection planning problem?
+Can a swarm optimizer whose search phases are steered by deep reinforcement
+learning beat fixed-schedule and classical metaheuristics on this constrained
+agricultural planning problem?
 
-## Motivation & Justification
+## Why it matters
 
-- The five reviewed papers each adapt *how they search*, but the adaptation is
-  either a fixed schedule or a heavy learned policy; a lightweight feedback-driven
-  rule is unexplored in this setting.
-- Energy is the operational bottleneck for aerial inspection yet is rarely modelled
-  explicitly in multi-robot task allocation.
-- Heterogeneous sensing makes the assignment genuinely constrained, not a pure
-  routing problem.
+- Field robots are energy-limited and heterogeneous; bad plans waste battery and
+  miss spray windows.
+- Reviewed work adapts search, but rarely learns the strategy online — and almost
+  never with explicit energy.
+- The method maps cleanly onto the course milestones below.
 
-## Supporting Literature
+## Approach
 
-| Paper | How it supports this idea |
-| --- | --- |
-| Yuan et al. 2025 | Energy-based operator selection in a hyper-heuristic; proves the mechanism |
-| Nait Chabane and Guenounou 2025 | Capability-preserving encoding; exact-solver benchmarking discipline |
-| Cheng et al. 2024 | Adaptive dual-level local search (reallocation plus route refinement) |
-| Chen et al. 2025 | Idle-aware permutation encoding; multi-objective framing |
-
-## Proposed Approach
-
-- **Agents / environment:** the heterogeneous fleet and site in `proposals/use_case.md`.
-- **Decision variables:** task-to-robot assignment, per-robot visiting sequence.
-- **Objective(s):** energy (primary), makespan and workload balance (secondary).
-- **Constraints:** capability matching, per-robot energy budget, depot start/end,
-  time windows, precedence, no-go zones.
-- **Hyper-heuristic design:**
-  - Low-level operator pool: inter-robot task reassignment, route-segment reversal,
-    insertion, swap, capability-repair move, and short local re-optimization.
-  - Operator selection probabilities updated from observed fitness improvement
-    using an energy/Boltzmann rule (following Yuan) or a lightweight multi-armed
-    bandit, rather than a fixed schedule.
-  - Capability-preserving initialization so solutions start feasible.
-
-## Algorithms to Implement (milestones)
-
-- [ ] Milestone 3 — Simulated Annealing as the baseline local search.
-- [ ] Milestone 4 — Genetic Algorithm with capability-preserving encoding.
-- [ ] Milestone 5 — one swarm method (Particle Swarm, Ant Colony, Whale or Grey Wolf).
-- [ ] Milestone 6 — the learning-assisted hyper-heuristic (novel algorithm).
-- [ ] Bonus — the feedback rule as a light machine-learning component.
+- Variables: task-to-robot assignment, per-robot visit order.
+- Objectives: energy, makespan, workload balance.
+- Constraints: sensor match, battery, no-go rows, time windows, scout-before-spray.
+- Method: particle swarm base (Milestone 5); a deep reinforcement learning
+  controller selects search phases and operators (final Milestone plus the
+  machine-learning bonus). Simulated annealing and the genetic algorithm serve as
+  baselines (Milestones 3–4). The final optimizer stays population-based, so the
+  milestone rule holds; learning only steers strategy.
 
 ## Novelty
 
-Feedback-driven operator selection combined with an explicit energy objective and
-heterogeneous-capability constraints, on a use case not covered by the reviewed work.
+Online strategy selection plus explicit energy on a constrained agricultural
+planning problem — absent from the reviewed work.
 
-## Expected Results & Metrics
+## Metrics
 
-- Energy, makespan, workload balance and coverage versus simulated annealing,
-  genetic algorithm, the swarm method and a fixed-schedule hyper-heuristic.
-- Ablation of the feedback-driven operator selection.
-- Repeated runs with statistical tests and effect sizes.
-
-## Feasibility & Risks
-
-- **Compute/time:** small instances (tens of tasks) run in seconds in Python.
-- **Risks:** hyper-heuristic complexity; weak benefit over a strong genetic
-  algorithm; energy model credibility.
-- **Mitigations:** keep the operator pool small; include a fixed-schedule control;
-  justify the energy model with a sensitivity study.
-
-## Keywords
-
-`robotics`, `multi-agent`, `cooperative`, `meta-heuristics`, `optimization`
+Energy, makespan, balance, coverage, runtime; ablation of the controller;
+repeated runs with statistical tests.
 
 ## References
 
-1. Yuan, M., Chen, M., Zhou, T., Han, Z. (2025). Energy learning hyper-heuristic for
-   heterogeneous aerial vehicle task assignment. *Defence Technology*, 54, 1–14.
-2. Nait Chabane, A., Guenounou, O. (2025). Enhanced genetic algorithm for
-   heterogeneous multi-robot task allocation and planning. *Complex & Intelligent
-   Systems*, 11, 435.
-3. Cheng, H., Yi, J., Xia, W., Pu, H., Luo, J. (2024). Adaptive memetic algorithm
-   with dual-level local search for multi-robot surveillance. *Complex System
-   Modeling and Simulation*, 4(2), 210–221.
-4. Chen, X., Wan, Y., Qi, J., Zhao, Z., Ruan, Y., Tang, J. (2025). Bi-subpopulation
-   coevolutionary immune algorithm for multi-aerial-vehicle task allocation.
-   *Complex & Intelligent Systems*, 11(2), 149.
+1. Qin et al. 2025. Drones. https://doi.org/10.3390/drones9060436
+2. Nait Chabane and Guenounou 2025. Complex and Intelligent Systems. https://doi.org/10.1007/s40747-025-02062-w
+3. Cheng et al. 2024. Complex System Modeling and Simulation. https://doi.org/10.23919/CSMS.2024.0006

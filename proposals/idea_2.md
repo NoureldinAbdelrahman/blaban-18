@@ -1,104 +1,56 @@
 # Project Idea #2 (Fallback)
 
-**Working title:** Robust Multi-Objective Inspection Planning under Recharging and
-Robot Failure for a Renewable-Energy Site
+**Title:** Cooperative Planetary-Surface Exploration under Energy, Terrain, and
+Communication Constraints
 
-## Domain / Application
+## Setting
 
-- **Theme:** multi-agent cooperative systems in robotics / autonomous systems.
-- **Setting:** the same renewable-energy inspection site as Idea #1
-  (`proposals/use_case.md`), extended with battery recharging and a mid-mission
-  robot failure.
+Heterogeneous rovers explore a Mars-like site with a lander relay. See Use Case B
+in `proposals/use_case.md`.
 
-## Problem Statement
+## Problem
 
-Plan inspection assignments and routes for a heterogeneous fleet that must recharge
-during the mission and remain effective when one robot fails, returning a set of
-trade-off solutions between fleet energy consumption and mission makespan instead of
-a single answer.
+Assign science targets and plan traverses jointly to maximize science return while
+cutting energy and makespan, under instrument match, slope and crater no-go zones,
+battery plus solar recharge, communication range, and precedence constraints.
 
-## Research Question
+## Research question
 
-Can a multi-objective coevolutionary optimizer produce a diverse set of
-energy-versus-makespan inspection plans that stay feasible and near-optimal when
-recharging is required and a robot fails mid-mission, outperforming classical
-multi-objective evolutionary algorithms?
+Can a multi-objective coevolutionary optimizer return a diverse set of
+energy-versus-science plans that stay feasible when recharging is required and a
+rover fails, outperforming classical multi-objective evolutionary algorithms?
 
-## Motivation & Justification
+## Why it matters
 
-- Every reviewed paper assumes static tasks and, except Yuan, ignores energy
-  explicitly; none handles recharging or faults. This is the clearest open gap.
-- Operators care about a frontier of options (fast-and-costly versus slow-and-cheap)
-  rather than one plan, so a Pareto set is practically useful.
-- Fault tolerance matters for costly aerial inspection missions.
+- Planetary missions must trade science return against energy and time, and survive
+  faults with no human in the loop.
+- Reviewed work ignores recharging and failure handling, and stops at two
+  objectives without communication limits.
+- A Pareto set of plans is operationally useful: fast-and-costly versus slow-and-cheap.
 
-## Supporting Literature
+## Approach
 
-| Paper | How it supports this idea |
-| --- | --- |
-| Chen et al. 2025 | Coevolutionary immune population structure, idle-aware encoding, Pareto results |
-| Qin et al. 2025 | Two-objective formulation; adaptive strategy selection |
-| Yuan et al. 2025 | Explicit energy modelling and complex constraints |
-| Nait Chabane and Guenounou 2025 | Dynamic re-planning after a robot failure; statistical rigor |
-
-## Proposed Approach
-
-- **Agents / environment:** heterogeneous fleet plus charging stations; one robot may
-  fail during execution.
-- **Decision variables:** assignment, per-robot sequence, and charging stops/timing.
-- **Objective(s):** minimize fleet energy and minimize makespan (Pareto front);
-  robustness as a secondary measure.
-- **Constraints:** capability matching, energy budgets with recharge, depot start
-  and end, time windows, precedence, no-go zones, and feasibility after failure.
-- **Algorithm design:**
-  - Two coevolving subpopulations (elite and exploratory) with an adaptive pool of
-    crossover and mutation operators, following Chen.
-  - Idle-aware encoding so underused robots can stay at the depot.
-  - Reallocation operator triggered by a simulated robot failure, so the plan is
-    repaired rather than rebuilt.
-
-## Algorithms to Implement (milestones)
-
-- [ ] Milestone 3 — Simulated Annealing for the single-objective relaxation.
-- [ ] Milestone 4 — Genetic Algorithm as the evolutionary baseline.
-- [ ] Milestone 5 — one swarm method, adapted to multiple objectives if possible.
-- [ ] Milestone 6 — the multi-objective coevolutionary algorithm with
-      recharging and fault re-planning (novel algorithm).
-- [ ] Bonus — a machine-learning predictor for failure or recharge needs.
+- Variables: assignment, per-rover route, charging stops and waiting timing.
+- Objectives: energy, makespan, science return.
+- Constraints: instrument match, terrain no-go zones, energy budgets with recharge,
+  depot start and end, time windows, precedence, lander communication range.
+- Method: two coevolving subpopulations with an adaptive operator pool and
+  idle-aware encoding; a reallocation operator repairs the plan on simulated rover
+  failure. Simulated annealing, genetic algorithm, and one swarm method are the
+  baselines (Milestones 3–5); the coevolutionary planner is the final Milestone.
 
 ## Novelty
 
-Explicit recharging and fault-triggered re-planning inside a multi-objective
-coevolutionary inspection planner, a combination absent from the reviewed work.
+Explicit recharge, communication limits, and fault-triggered replanning inside a
+multi-objective coevolutionary exploration planner.
 
-## Expected Results & Metrics
+## Metrics
 
-- Hypervolume and Pareto-front coverage versus multi-objective evolutionary
-  baselines on static and failure scenarios.
-- Energy, makespan, coverage after failure, and number of reassignments.
-- Ablation of the coevolution and idle-aware encoding components.
-
-## Feasibility & Risks
-
-- **Compute/time:** multi-objective runs are heavier; use small-to-medium instances.
-- **Risks:** added complexity from recharging and failures; harder benchmarking.
-- **Mitigations:** implement the static single-objective case first, then add
-  recharging, then failure; keep a clear baseline.
-
-## Keywords
-
-`robotics`, `multi-agent`, `cooperative`, `meta-heuristics`, `optimization`
+Hypervolume and front coverage versus baselines; energy, makespan, coverage after
+failure, reassignment count; component ablation; repeated runs with statistical tests.
 
 ## References
 
-1. Chen, X., Wan, Y., Qi, J., Zhao, Z., Ruan, Y., Tang, J. (2025). Bi-subpopulation
-   coevolutionary immune algorithm for multi-aerial-vehicle task allocation.
-   *Complex & Intelligent Systems*, 11(2), 149.
-2. Qin, L., Zhou, Z., Liu, H., Yan, Z., Dai, Y. (2025). Deep reinforcement
-   learning-driven seagull optimization for multi-aerial-vehicle task allocation.
-   *Drones*, 9(6), 436.
-3. Yuan, M., Chen, M., Zhou, T., Han, Z. (2025). Energy learning hyper-heuristic for
-   heterogeneous aerial vehicle task assignment. *Defence Technology*, 54, 1–14.
-4. Nait Chabane, A., Guenounou, O. (2025). Enhanced genetic algorithm for
-   heterogeneous multi-robot task allocation and planning. *Complex & Intelligent
-   Systems*, 11, 435.
+1. Chen et al. 2025. Complex and Intelligent Systems. https://doi.org/10.1007/s40747-024-01720-9
+2. Qin et al. 2025. Drones. https://doi.org/10.3390/drones9060436
+3. Yuan et al. 2025. Defence Technology. https://doi.org/10.1016/j.dt.2025.06.006
