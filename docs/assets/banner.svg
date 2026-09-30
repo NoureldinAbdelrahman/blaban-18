@@ -1,65 +1,101 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="BLABAN Ashtoota-inspired project banner">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="BLABAN dessert-inspired project banner">
   <defs>
     <linearGradient id="night-dessert" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1d0f06"/>
-      <stop offset="52%" stop-color="#4a2410"/>
-      <stop offset="100%" stop-color="#7a3c12"/>
+      <stop offset="0%" stop-color="#241005"/>
+      <stop offset="55%" stop-color="#5a2410"/>
+      <stop offset="100%" stop-color="#96521a"/>
     </linearGradient>
     <linearGradient id="honey-text" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#fff7e6"/>
       <stop offset="55%" stop-color="#ffd98a"/>
       <stop offset="100%" stop-color="#f2a93b"/>
     </linearGradient>
-    <radialGradient id="cup-glow" cx="0.76" cy="0.42" r="0.48">
-      <stop offset="0%" stop-color="#ffc85e" stop-opacity="0.30"/>
+    <radialGradient id="dish-glow" cx="0.78" cy="0.45" r="0.5">
+      <stop offset="0%" stop-color="#ffc85e" stop-opacity="0.35"/>
       <stop offset="100%" stop-color="#ffc85e" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="sweet-lattice" width="76" height="76" patternUnits="userSpaceOnUse">
-      <path d="M38 6 L70 38 L38 70 L6 38 Z" fill="none" stroke="#ffdc9e" stroke-opacity="0.16" stroke-width="1.6"/>
-      <circle cx="38" cy="38" r="3.2" fill="#ffdc9e" fill-opacity="0.16"/>
-    </pattern>
-    <clipPath id="cup">
-      <rect x="884" y="112" width="192" height="158" rx="26"/>
-    </clipPath>
+    <linearGradient id="clay" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c96b32"/>
+      <stop offset="100%" stop-color="#7e3a12"/>
+    </linearGradient>
+    <linearGradient id="clay-dark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a9521f"/>
+      <stop offset="100%" stop-color="#5f2a0d"/>
+    </linearGradient>
+    <linearGradient id="choco" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6b3413"/>
+      <stop offset="100%" stop-color="#3c1c08"/>
+    </linearGradient>
+    <linearGradient id="cream" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fffdf6"/>
+      <stop offset="100%" stop-color="#efdcbb"/>
+    </linearGradient>
   </defs>
 
   <rect width="1280" height="320" rx="24" fill="url(#night-dessert)"/>
-  <rect width="1280" height="320" rx="24" fill="url(#sweet-lattice)"/>
-  <rect width="1280" height="320" rx="24" fill="url(#cup-glow)"/>
+  <rect width="1280" height="320" rx="24" fill="url(#dish-glow)"/>
+  <g fill="#ffdc9e" opacity="0.14">
+    <circle cx="60" cy="60" r="4"/>
+    <circle cx="200" cy="250" r="5"/>
+    <circle cx="330" cy="80" r="4"/>
+    <circle cx="470" cy="260" r="6"/>
+    <circle cx="600" cy="70" r="4"/>
+    <circle cx="700" cy="270" r="5"/>
+    <circle cx="1200" cy="70" r="5"/>
+    <circle cx="150" cy="160" r="3"/>
+    <circle cx="560" cy="160" r="3"/>
+  </g>
 
   <g>
-    <g clip-path="url(#cup)">
-      <rect x="884" y="112" width="192" height="158" fill="#f7ead2"/>
-      <rect x="884" y="216" width="192" height="54" fill="#caa06a"/>
-      <rect x="884" y="180" width="192" height="36" fill="#fff8ea"/>
-      <rect x="884" y="148" width="192" height="32" fill="#e8c88f"/>
-      <rect x="884" y="112" width="192" height="36" fill="#fffdf6"/>
+    <path d="M742 178 L742 300 Q742 312 754 312 L902 312 Q914 312 914 300 L914 178 Z" fill="url(#clay-dark)"/>
+    <ellipse cx="828" cy="178" rx="86" ry="24" fill="#8a3c12"/>
+    <ellipse cx="828" cy="174" rx="74" ry="20" fill="url(#cream)"/>
+    <ellipse cx="828" cy="172" rx="74" ry="20" fill="none" stroke="#ffd98a" stroke-opacity="0.5" stroke-width="2"/>
+    <g fill="#a4c073">
+      <ellipse cx="796" cy="168" rx="9" ry="5" transform="rotate(-20 796 168)"/>
+      <ellipse cx="830" cy="176" rx="10" ry="5" transform="rotate(15 830 176)"/>
+      <ellipse cx="862" cy="167" rx="8" ry="5" transform="rotate(-35 862 167)"/>
     </g>
-    <rect x="884" y="112" width="192" height="158" rx="26" fill="none" stroke="#ffd98a" stroke-opacity="0.7" stroke-width="3"/>
-    <g stroke="#c98a2e" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.95">
-      <path d="M896 108 q14 -22 30 -8 t30 -10 t30 -6 t30 -8 t28 -4"/>
-      <path d="M902 96 q16 -16 32 -6 t32 -8 t30 -4"/>
-      <path d="M948 88 q20 -10 40 -2"/>
-    </g>
-    <g stroke="#8a3c0d" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.9">
-      <path d="M900 124 q24 18 52 6 t52 4 t52 2"/>
-      <path d="M912 190 q24 14 52 5 t52 3"/>
-    </g>
-    <g fill="#9dbb6b">
-      <circle cx="930" cy="120" r="3.4"/>
-      <circle cx="978" cy="126" r="3.4"/>
-      <circle cx="1024" cy="120" r="3.4"/>
-      <circle cx="954" cy="196" r="3.2"/>
-      <circle cx="1006" cy="192" r="3.2"/>
-    </g>
-    <g fill="#fff7e6" opacity="0.8">
-      <circle cx="906" cy="130" r="2.4"/>
-      <circle cx="1000" cy="136" r="2.4"/>
+    <g fill="#e8c88f">
+      <ellipse cx="812" cy="176" rx="9" ry="5" transform="rotate(25 812 176)"/>
+      <ellipse cx="848" cy="170" rx="8" ry="5" transform="rotate(-10 848 170)"/>
     </g>
   </g>
 
-  <text x="80" y="148" font-family="Georgia, 'Times New Roman', serif" font-size="104" font-weight="800" letter-spacing="8" fill="url(#honey-text)">BLABAN</text>
-  <text x="84" y="194" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="500" fill="#ffecc2">Bio-inspired Learning Algorithms for Benchmarking Agent Navigation</text>
-  <text x="84" y="232" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#f3c67f">MCTR 1021 · GUC · Winter 2026</text>
-  <text x="84" y="264" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#d8a86a">Original Ashtoota-inspired artwork; not official brand artwork.</text>
+  <g>
+    <path d="M884 196 L884 306 Q884 318 896 318 L1124 318 Q1136 318 1136 306 L1136 196 Z" fill="url(#clay)"/>
+    <path d="M884 196 L884 306 Q884 318 896 318 L920 318 L920 196 Z" fill="#000000" opacity="0.12"/>
+    <rect x="884" y="232" width="252" height="10" fill="#000000" opacity="0.12"/>
+    <ellipse cx="1010" cy="196" rx="126" ry="34" fill="#8a3c12"/>
+    <ellipse cx="1010" cy="190" rx="110" ry="28" fill="url(#choco)"/>
+    <path d="M920 184 q40 -16 90 -12 t90 10" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="5" stroke-linecap="round"/>
+    <g>
+      <ellipse cx="940" cy="186" rx="15" ry="8" transform="rotate(-18 940 186)" fill="#e8c88f"/>
+      <ellipse cx="972" cy="196" rx="13" ry="8" transform="rotate(22 972 196)" fill="#c07a2a"/>
+      <ellipse cx="1000" cy="184" rx="16" ry="9" transform="rotate(-8 1000 184)" fill="#a4c073"/>
+      <ellipse cx="1032" cy="194" rx="14" ry="8" transform="rotate(30 1032 194)" fill="#e8c88f"/>
+      <ellipse cx="1062" cy="185" rx="13" ry="8" transform="rotate(-25 1062 185)" fill="#8a4d16"/>
+      <ellipse cx="956" cy="178" rx="11" ry="7" transform="rotate(12 956 178)" fill="#a4c073"/>
+      <ellipse cx="1016" cy="176" rx="12" ry="7" transform="rotate(-30 1016 176)" fill="#e8c88f"/>
+      <ellipse cx="986" cy="200" rx="11" ry="7" transform="rotate(8 986 200)" fill="#c07a2a"/>
+      <ellipse cx="1048" cy="180" rx="10" ry="6" transform="rotate(40 1048 180)" fill="#a4c073"/>
+      <ellipse cx="928" cy="196" rx="10" ry="6" transform="rotate(-40 928 196)" fill="#8a4d16"/>
+    </g>
+    <g fill="#fff7e6" opacity="0.85">
+      <circle cx="946" cy="183" r="2.4"/>
+      <circle cx="1004" cy="181" r="2.4"/>
+      <circle cx="1058" cy="188" r="2.4"/>
+    </g>
+    <path d="M1120 210 q6 26 -2 44 q-6 14 -2 30" fill="none" stroke="#fff7e6" stroke-opacity="0.5" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <g fill="none" stroke="#fff7e6" stroke-linecap="round">
+    <path d="M960 120 q-14 -22 0 -40 q14 -18 0 -40" stroke-width="6" opacity="0.22"/>
+    <path d="M1030 118 q-14 -22 0 -40 q14 -18 0 -40" stroke-width="6" opacity="0.16"/>
+  </g>
+
+  <text x="64" y="152" font-family="'Trebuchet MS', 'Segoe UI', Verdana, sans-serif" font-size="102" font-weight="800" letter-spacing="6" fill="url(#honey-text)">BLABAN</text>
+  <text x="68" y="198" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="500" fill="#ffecc2">Bio-inspired Learning Algorithms for Benchmarking Agent Navigation</text>
+  <text x="68" y="236" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#f3c67f">MCTR 1021 · GUC · Winter 2026</text>
+  <text x="68" y="268" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#d8a86a">Original artwork inspired by Egyptian dessert culture; not official brand artwork.</text>
 </svg>
