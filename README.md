@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="docs/assets/banner.svg" alt="BLABAN — Bio-inspired Learning Algorithms for Benchmarking Agent Navigation" width="100%"/>
+  <img src="docs/assets/banner.svg" alt="BLABAN dessert-inspired project banner" width="100%"/>
 </div>
 
 <div align="center">

@@ -1,50 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="BLABAN banner">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="BLABAN dessert-inspired project banner">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0b1026"/>
-      <stop offset="55%" stop-color="#151a3a"/>
-      <stop offset="100%" stop-color="#241b4d"/>
+    <linearGradient id="night-dessert" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d0f06"/>
+      <stop offset="52%" stop-color="#4a2410"/>
+      <stop offset="100%" stop-color="#7a3c12"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#5eead4"/>
-      <stop offset="50%" stop-color="#818cf8"/>
-      <stop offset="100%" stop-color="#f472b6"/>
+    <linearGradient id="honey-text" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fff7e6"/>
+      <stop offset="55%" stop-color="#ffd98a"/>
+      <stop offset="100%" stop-color="#f2a93b"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.72" cy="0.35" r="0.55">
-      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.55"/>
-      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    <radialGradient id="tray-glow" cx="0.76" cy="0.42" r="0.48">
+      <stop offset="0%" stop-color="#ffc85e" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#ffc85e" stop-opacity="0"/>
     </radialGradient>
+    <pattern id="sweet-lattice" width="76" height="76" patternUnits="userSpaceOnUse">
+      <path d="M38 6 L70 38 L38 70 L6 38 Z" fill="none" stroke="#ffdc9e" stroke-opacity="0.18" stroke-width="1.6"/>
+      <circle cx="38" cy="38" r="3.2" fill="#ffdc9e" fill-opacity="0.18"/>
+      <path d="M38 22 L54 38 L38 54 L22 38 Z" fill="none" stroke="#ffdc9e" stroke-opacity="0.12" stroke-width="1.2"/>
+    </pattern>
   </defs>
 
-  <rect width="1280" height="320" rx="24" fill="url(#bg)"/>
-  <rect width="1280" height="320" rx="24" fill="url(#glow)"/>
+  <rect width="1280" height="320" rx="24" fill="url(#night-dessert)"/>
+  <rect width="1280" height="320" rx="24" fill="url(#sweet-lattice)"/>
+  <rect width="1280" height="320" rx="24" fill="url(#tray-glow)"/>
 
-  <g stroke="#818cf8" stroke-opacity="0.45" stroke-width="1.5">
-    <line x1="900" y1="70" x2="1010" y2="120"/>
-    <line x1="1010" y1="120" x2="1160" y2="90"/>
-    <line x1="1010" y1="120" x2="1090" y2="215"/>
-    <line x1="1090" y1="215" x2="960" y2="255"/>
-    <line x1="900" y1="70" x2="840" y2="180"/>
-    <line x1="840" y1="180" x2="960" y2="255"/>
-    <line x1="840" y1="180" x2="1010" y2="120"/>
-    <line x1="1160" y1="90" x2="1180" y2="200"/>
-    <line x1="1180" y1="200" x2="1090" y2="215"/>
-  </g>
-  <g fill="#a5b4fc">
-    <circle cx="900" cy="70" r="7"/>
-    <circle cx="1010" cy="120" r="9"/>
-    <circle cx="1160" cy="90" r="6"/>
-    <circle cx="1090" cy="215" r="8"/>
-    <circle cx="960" cy="255" r="5"/>
-    <circle cx="840" cy="180" r="7"/>
-    <circle cx="1180" cy="200" r="5"/>
-  </g>
-  <g fill="#5eead4">
-    <circle cx="1010" cy="120" r="3.5"/>
-    <circle cx="840" cy="180" r="3"/>
+  <g>
+    <ellipse cx="978" cy="192" rx="238" ry="102" fill="#2a1408" fill-opacity="0.82" stroke="#f2b234" stroke-opacity="0.75" stroke-width="3"/>
+    <ellipse cx="978" cy="184" rx="238" ry="102" fill="#5a2c12" stroke="#ffd98a" stroke-opacity="0.55" stroke-width="2"/>
+    <g>
+      <circle cx="856" cy="168" r="30" fill="#e9a749"/>
+      <circle cx="906" cy="148" r="34" fill="#f4c46a"/>
+      <circle cx="962" cy="166" r="30" fill="#e9a749"/>
+      <circle cx="1018" cy="148" r="34" fill="#f4c46a"/>
+      <circle cx="1074" cy="168" r="30" fill="#e9a749"/>
+      <circle cx="882" cy="208" r="32" fill="#f4c46a"/>
+      <circle cx="940" cy="222" r="30" fill="#e9a749"/>
+      <circle cx="998" cy="208" r="32" fill="#f4c46a"/>
+      <circle cx="1054" cy="222" r="30" fill="#e9a749"/>
+    </g>
+    <g stroke="#8a3c0d" stroke-width="2" opacity="0.55" fill="none">
+      <path d="M832 168 q12 -14 24 0 t24 0 t24 0"/>
+      <path d="M882 148 q12 -14 24 0 t24 0 t24 0"/>
+      <path d="M938 166 q12 -14 24 0 t24 0 t24 0"/>
+      <path d="M994 148 q12 -14 24 0 t24 0 t24 0"/>
+      <path d="M856 208 q12 -14 24 0 t24 0 t24 0"/>
+      <path d="M914 222 q12 -14 24 0 t24 0 t24 0"/>
+      <path d="M972 208 q12 -14 24 0 t24 0 t24 0"/>
+    </g>
+    <g stroke="#d97a1f" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.9">
+      <path d="M846 150 q30 26 64 8 t64 6"/>
+      <path d="M936 132 q30 26 64 8 t64 6"/>
+      <path d="M868 192 q30 26 64 8 t64 6"/>
+      <path d="M958 206 q30 26 64 8 t64 6"/>
+    </g>
+    <g fill="#9dbb6b">
+      <circle cx="872" cy="162" r="3.4"/>
+      <circle cx="918" cy="176" r="3.4"/>
+      <circle cx="984" cy="158" r="3.4"/>
+      <circle cx="1032" cy="176" r="3.4"/>
+      <circle cx="900" cy="202" r="3.4"/>
+      <circle cx="958" cy="214" r="3.4"/>
+      <circle cx="1018" cy="200" r="3.4"/>
+      <circle cx="1064" cy="184" r="3.4"/>
+    </g>
+    <g fill="#fff7e6" opacity="0.75">
+      <circle cx="848" cy="160" r="2.4"/>
+      <circle cx="960" cy="140" r="2.4"/>
+      <circle cx="1048" cy="160" r="2.4"/>
+      <circle cx="930" cy="198" r="2.4"/>
+    </g>
   </g>
 
-  <text x="80" y="150" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="104" font-weight="800" letter-spacing="6" fill="url(#accent)">BLABAN</text>
-  <text x="82" y="196" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="500" fill="#e2e8f0">Bio-inspired Learning Algorithms for Benchmarking Agent Navigation</text>
-  <text x="82" y="242" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="400" fill="#94a3b8">MCTR 1021 · Optimization Techniques for Multi-Cooperative Systems · GUC · Winter 2026</text>
+  <text x="80" y="148" font-family="Georgia, 'Times New Roman', serif" font-size="104" font-weight="800" letter-spacing="8" fill="url(#honey-text)">BLABAN</text>
+  <text x="84" y="194" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="500" fill="#ffecc2">Bio-inspired Learning Algorithms for Benchmarking Agent Navigation</text>
+  <text x="84" y="232" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#f3c67f">A dessert-inspired optimization kitchen · MCTR 1021 · GUC · Winter 2026</text>
+  <text x="84" y="264" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#d8a86a">Original artwork inspired by Egyptian dessert culture; not official brand artwork.</text>
 </svg>
