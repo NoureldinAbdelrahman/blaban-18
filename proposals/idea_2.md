@@ -39,6 +39,8 @@ rover fails, outperforming classical multi-objective evolutionary algorithms?
   failure. Simulated annealing, genetic algorithm, and one swarm method are the
   baselines (Milestones 3–5); the coevolutionary planner is the final Milestone.
 
+![Idea 2 method loop: coevolving populations, Pareto front, and replanning](figures/idea2_method.svg)
+
 ## Novelty
 
 Explicit recharge, communication limits, and fault-triggered replanning inside a

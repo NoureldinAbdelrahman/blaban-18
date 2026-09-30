@@ -12,6 +12,8 @@ assignment plus routing.
 - Respect: sensor–task match, battery range, crop-row no-go lines, spray time
   windows, scout-before-spray precedence.
 
+![Use Case A: agricultural field with assigned tasks and planned routes](figures/use_case_agriculture.svg)
+
 ## B — Planetary-surface cooperative exploration (Idea 2)
 
 - Fleet: 3–6 heterogeneous rovers (imager, spectrometer, sampler) plus a lander relay.
@@ -21,6 +23,8 @@ assignment plus routing.
 - Minimize: energy and makespan; maximize science return; balance workload.
 - Respect: instrument match, slope and crater no-go zones, battery plus solar
   recharge, communication range to the lander, image-before-sample precedence.
+
+![Use Case B: planetary site with rovers, lander, targets and routes](figures/use_case_space.svg)
 
 ## Shared simulation rules
 

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="440" viewBox="0 0 840 440" role="img" aria-label="Method loop for Idea 1: learning-assisted swarm optimizer">
+  <defs>
+    <marker id="arr1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#33393f"/>
+    </marker>
+  </defs>
+  <rect width="840" height="440" rx="16" fill="#f7f9fc"/>
+  <text x="20" y="36" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#1f2a37">Idea 1 — Learning-assisted swarm optimizer (method loop)</text>
+  <g font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle">
+    <rect x="26" y="100" width="170" height="84" rx="12" fill="#ffffff" stroke="#2e7d32" stroke-width="2.5"/>
+    <text x="111" y="132" font-size="15" font-weight="700" fill="#1f2a37">Field tasks + fleet</text>
+    <text x="111" y="154" font-size="12" fill="#5d666e">assignment + routes</text>
+    <rect x="232" y="100" width="170" height="84" rx="12" fill="#ffffff" stroke="#6a1b9a" stroke-width="2.5"/>
+    <text x="317" y="126" font-size="14" font-weight="700" fill="#1f2a37">Hyper-heuristic</text>
+    <text x="317" y="146" font-size="14" font-weight="700" fill="#1f2a37">controller</text>
+    <text x="317" y="164" font-size="11" fill="#5d666e">deep reinforcement learning</text>
+    <rect x="438" y="100" width="170" height="84" rx="12" fill="#ffffff" stroke="#1565c0" stroke-width="2.5"/>
+    <text x="523" y="126" font-size="14" font-weight="700" fill="#1f2a37">Operator pool</text>
+    <text x="523" y="146" font-size="11" fill="#5d666e">reassign · reverse · insert</text>
+    <text x="523" y="162" font-size="11" fill="#5d666e">swap · repair</text>
+    <rect x="644" y="100" width="170" height="84" rx="12" fill="#ffffff" stroke="#ef6c00" stroke-width="2.5"/>
+    <text x="729" y="132" font-size="15" font-weight="700" fill="#1f2a37">Candidate plans</text>
+    <text x="729" y="154" font-size="12" fill="#5d666e">energy · makespan · balance</text>
+  </g>
+  <g stroke="#33393f" stroke-width="2" fill="none">
+    <line x1="196" y1="142" x2="232" y2="142" marker-end="url(#arr1)"/>
+    <line x1="402" y1="142" x2="438" y2="142" marker-end="url(#arr1)"/>
+    <line x1="608" y1="142" x2="644" y2="142" marker-end="url(#arr1)"/>
+    <line x1="729" y1="184" x2="729" y2="260" marker-end="url(#arr1)"/>
+    <path d="M429 295 C300 295 285 230 317 184" marker-end="url(#arr1)"/>
+  </g>
+  <rect x="429" y="260" width="300" height="70" rx="12" fill="#ffffff" stroke="#33393f" stroke-width="2.5"/>
+  <text x="579" y="288" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#1f2a37">Evaluate candidate plans</text>
+  <text x="579" y="310" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#5d666e">energy · makespan · workload balance</text>
+  <text x="238" y="252" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#6a1b9a">reward: fitness gain</text>
+  <rect x="26" y="360" width="788" height="56" rx="10" fill="#e8ecf1"/>
+  <text x="420" y="384" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" fill="#1f2a37">Baselines (Milestones 3–5): simulated annealing · genetic algorithm · particle swarm</text>
+  <text x="420" y="404" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#5d666e">Milestone 6 adds the controller + operator pool above</text>
+</svg>

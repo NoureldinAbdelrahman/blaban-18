@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="540" viewBox="0 0 800 540" role="img" aria-label="Top-down view of an agricultural field with assigned tasks and planned robot routes">
+  <defs>
+    <linearGradient id="field" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7faf2"/>
+      <stop offset="100%" stop-color="#e4edd6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="540" rx="16" fill="url(#field)"/>
+  <text x="20" y="34" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#2e4a22">Use Case A — Agricultural ground-robot monitoring (top view)</text>
+  <g stroke="#8fae6d" stroke-width="3" opacity="0.6">
+    <line x1="40" y1="90" x2="760" y2="90"/>
+    <line x1="40" y1="130" x2="760" y2="130"/>
+    <line x1="40" y1="170" x2="760" y2="170"/>
+    <line x1="40" y1="210" x2="760" y2="210"/>
+    <line x1="40" y1="250" x2="760" y2="250"/>
+    <line x1="40" y1="290" x2="760" y2="290"/>
+    <line x1="40" y1="330" x2="760" y2="330"/>
+  </g>
+  <rect x="300" y="70" width="26" height="310" fill="#b7bec6"/>
+  <text transform="rotate(-90 313 225)" x="313" y="225" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#5d666e">no-go irrigation line</text>
+  <rect x="640" y="360" width="100" height="60" rx="20" fill="#a9cdea"/>
+  <text x="690" y="396" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#33607e">water</text>
+  <g fill="none" stroke-width="3" stroke-dasharray="9 7" opacity="0.85">
+    <polyline points="82,440 180,120 420,150 640,120" stroke="#2e7d32"/>
+    <polyline points="82,440 250,230 520,240 690,300" stroke="#7b1fa2"/>
+    <polyline points="82,440 350,330 580,360" stroke="#00796b"/>
+  </g>
+  <g font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">
+    <circle cx="180" cy="120" r="13" fill="#2f6fbf"/><text x="180" y="124">S1</text>
+    <circle cx="420" cy="150" r="13" fill="#2f6fbf"/><text x="420" y="154">S2</text>
+    <circle cx="640" cy="120" r="13" fill="#2f6fbf"/><text x="640" y="124">S3</text>
+    <circle cx="250" cy="230" r="13" fill="#cf8a12"/><text x="250" y="234">W1</text>
+    <circle cx="520" cy="240" r="13" fill="#cf8a12"/><text x="520" y="244">W2</text>
+    <circle cx="690" cy="300" r="13" fill="#cf8a12"/><text x="690" y="304">W3</text>
+    <circle cx="350" cy="330" r="13" fill="#c0392b"/><text x="350" y="334">P1</text>
+    <circle cx="580" cy="360" r="13" fill="#c0392b"/><text x="580" y="364">P2</text>
+  </g>
+  <rect x="56" y="420" width="52" height="40" rx="8" fill="#33393f"/>
+  <text x="82" y="478" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#33393f">Depot</text>
+  <g font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">
+    <rect x="60" y="388" width="26" height="26" rx="6" fill="#2e7d32"/><text x="73" y="406">G1</text>
+    <rect x="94" y="388" width="26" height="26" rx="6" fill="#7b1fa2"/><text x="107" y="406">G2</text>
+    <rect x="128" y="388" width="26" height="26" rx="6" fill="#00796b"/><text x="141" y="406">G3</text>
+  </g>
+  <g font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#33393f">
+    <circle cx="52" cy="508" r="8" fill="#2f6fbf"/><text x="66" y="512">soil</text>
+    <circle cx="150" cy="508" r="8" fill="#cf8a12"/><text x="164" y="512">weed</text>
+    <circle cx="248" cy="508" r="8" fill="#c0392b"/><text x="262" y="512">pest</text>
+    <line x1="330" y1="508" x2="370" y2="508" stroke="#2e7d32" stroke-width="3" stroke-dasharray="9 7"/><text x="378" y="512">planned route</text>
+    <rect x="520" y="500" width="26" height="16" fill="#b7bec6"/><text x="552" y="512">no-go</text>
+  </g>
+</svg>

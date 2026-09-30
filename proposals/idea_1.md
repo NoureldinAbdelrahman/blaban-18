@@ -37,6 +37,8 @@ agricultural planning problem?
   baselines (Milestones 3–4). The final optimizer stays population-based, so the
   milestone rule holds; learning only steers strategy.
 
+![Idea 1 method loop: controller, operator pool, evaluation, and baselines](figures/idea1_method.svg)
+
 ## Novelty
 
 Online strategy selection plus explicit energy on a constrained agricultural

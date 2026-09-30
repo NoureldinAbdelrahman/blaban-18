@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560" role="img" aria-label="Top-down view of a planetary site with rovers, lander, targets and routes">
+  <defs>
+    <linearGradient id="mars" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3c1c0d"/>
+      <stop offset="100%" stop-color="#6e3413"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="560" rx="16" fill="url(#mars)"/>
+  <text x="20" y="34" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#ffecc2">Use Case B — Planetary-surface rover exploration (top view)</text>
+  <g fill="#000000" opacity="0.25">
+    <circle cx="120" cy="250" r="4"/><circle cx="420" cy="80" r="5"/><circle cx="700" cy="90" r="4"/>
+    <circle cx="540" cy="430" r="5"/><circle cx="90" cy="420" r="4"/><circle cx="330" cy="470" r="4"/>
+  </g>
+  <ellipse cx="420" cy="430" rx="60" ry="20" fill="#ffffff" opacity="0.08"/>
+  <ellipse cx="600" cy="340" rx="70" ry="22" fill="#ffffff" opacity="0.08"/>
+  <g fill="#241009" stroke="#120905" stroke-width="2">
+    <ellipse cx="620" cy="150" rx="72" ry="42"/>
+    <ellipse cx="215" cy="330" rx="56" ry="32"/>
+    <ellipse cx="690" cy="400" rx="46" ry="28"/>
+  </g>
+  <text x="620" y="154" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#c98f5f">no-go crater</text>
+  <circle cx="140" cy="140" r="120" fill="none" stroke="#7fd4ff" stroke-width="2" stroke-dasharray="9 7" opacity="0.65"/>
+  <text x="140" y="30" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#bfe6ff">comm range</text>
+  <polygon points="140,108 170,140 140,172 110,140" fill="#d9dee3" stroke="#5b636b" stroke-width="2"/>
+  <text x="140" y="194" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ffecc2">Lander relay</text>
+  <rect x="406" y="416" width="28" height="30" rx="6" fill="#3a3f45"/>
+  <polygon points="420,420 412,434 418,434 414,446 424,430 418,430" fill="#ffd54a"/>
+  <text x="420" y="462" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#ffecc2">charger</text>
+  <g font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#ffecc2" text-anchor="middle">
+    <polygon points="350,106 364,120 350,134 336,120" fill="#ffd54a"/><text x="350" y="152">I1</text>
+    <polygon points="565,286 579,300 565,314 551,300" fill="#ffd54a"/><text x="565" y="332">I2</text>
+    <circle cx="300" cy="235" r="12" fill="#4dd0e1"/><text x="300" y="261">S1</text>
+    <circle cx="705" cy="225" r="12" fill="#4dd0e1"/><text x="705" y="251">S2</text>
+    <rect x="459" y="329" width="22" height="22" rx="4" fill="#e08bc0"/><text x="470" y="368">M1</text>
+  </g>
+  <g fill="none" stroke-width="3" stroke-dasharray="9 7" opacity="0.9">
+    <polyline points="200,445 300,235 350,120" stroke="#ffa726"/>
+    <polyline points="485,455 470,340 565,300" stroke="#64b5f6"/>
+    <polyline points="620,455 565,300 705,225" stroke="#81c784"/>
+  </g>
+  <g font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">
+    <rect x="185" y="430" width="30" height="30" rx="7" fill="#ef6c00"/><text x="200" y="450">R1</text>
+    <rect x="470" y="455" width="30" height="30" rx="7" fill="#1565c0"/><text x="485" y="475">R2</text>
+    <rect x="605" y="455" width="30" height="30" rx="7" fill="#2e7d32"/><text x="620" y="475">R3</text>
+  </g>
+  <rect x="726" y="410" width="30" height="30" rx="7" fill="#6b6b6b"/>
+  <g stroke="#e53935" stroke-width="4" stroke-linecap="round">
+    <line x1="730" y1="414" x2="752" y2="436"/>
+    <line x1="752" y1="414" x2="730" y2="436"/>
+  </g>
+  <text x="741" y="458" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#ef9a9a">fault</text>
+  <path d="M741 408 C738 340 722 280 708 240" fill="none" stroke="#e53935" stroke-width="2.5" stroke-dasharray="7 6"/>
+  <text x="748" y="322" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" fill="#ef9a9a">reallocate</text>
+  <g font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#ffecc2">
+    <polygon points="52,500 60,508 52,516 44,508" fill="#ffd54a"/><text x="66" y="512">imager</text>
+    <circle cx="178" cy="508" r="8" fill="#4dd0e1"/><text x="192" y="512">spectrometer</text>
+    <rect x="331" y="501" width="14" height="14" rx="2" fill="#e08bc0"/><text x="351" y="512">sampler</text>
+    <line x1="40" y1="532" x2="80" y2="532" stroke="#ffa726" stroke-width="3" stroke-dasharray="9 7"/><text x="88" y="536">planned route</text>
+    <line x1="238" y1="532" x2="278" y2="532" stroke="#e53935" stroke-width="2.5" stroke-dasharray="7 6"/><text x="286" y="536">reallocation</text>
+    <ellipse cx="414" cy="532" rx="14" ry="8" fill="#241009" stroke="#120905"/><text x="434" y="536">crater (no-go)</text>
+    <polygon points="566,524 560,532 564,532 561,540 568,530 564,530" fill="#ffd54a"/><text x="576" y="536">charger</text>
+  </g>
+</svg>
